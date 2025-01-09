@@ -7,7 +7,7 @@ import Subtasks from "./components/Subtasks";
 import Analytics from "./components/Analytics";
 
 const App = () => {
-  // Load initial data from localStorage
+  
   const loadTasksFromLocalStorage = () => {
     const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
     return savedTasks;
