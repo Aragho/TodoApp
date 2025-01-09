@@ -42,7 +42,6 @@ const App = () => {
   };
 
   useEffect(() => {
-    // Save tasks and subtasks to localStorage when they change
     localStorage.setItem("tasks", JSON.stringify(tasks));
     localStorage.setItem("subtasks", JSON.stringify(subtasks));
   }, [tasks, subtasks]);
